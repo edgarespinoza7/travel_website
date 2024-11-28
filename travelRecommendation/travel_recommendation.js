@@ -98,53 +98,15 @@ async function handleSearch() {
           <button class="bg-slate-900 w-[100px] py-2 mt-2 text-white">Visit</button>
         </div>
       </div>
-
-        
-
-       
         `
   }
-
-
-
-  // if (found) {
-  //   switch (found) {
-  //     case "beach":
-  //       result.innerHTML = `
-  //       <div class="bg-white p-4 mb-4">
-  //       <h1 class="text-slate-800 text-xl font-bold">${dataNew.beaches[0].name}</h1>
-  //       <img src=${dataNew.beaches[0].imageUrl} alt="bora-bora" class="w-[100%] py-4" />
-  //       <p>${dataNew.beaches[0].description}</p>
-  //       </div>
-  //       <div class="bg-white p-4">
-  //       <h1 class="text-slate-800 text-xl font-bold">${dataNew.beaches[1].name}</h1>
-  //       <img src=${dataNew.beaches[1].imageUrl} alt="bora-bora" class="w-[100%] py-4" />
-  //       <p>${dataNew.beaches[1].description}</p>
-  //       </div>
-  //       `
-  //       break;
-  //     case "beaches":
-  //       console.log(dataNew.beaches)
-  //       break;
-  //     case "temple":
-  //       console.log(dataNew.temples)
-  //       break;
-  //     case "temples":
-  //       console.log(dataNew.temples)
-  //       break;
-  //     case "country":
-  //       console.log(dataNew.countries)
-  //       break;
-  //     case "countries":
-  //       console.log(dataNew.countries)
-  //       break;
-  //     default:
-  //       console.log('No match')
-  //       break;
-  //   }
-  // } else {
-  //   console.log('No match. Please enter a destination or keyword.');
-  // }
+  else {
+    result.innerHTML = `
+        <div class="bg-white p-4 mb-4">
+        <h2 class="text-slate-800 text-2xl font-bold">No match found. Please enter a destination or keyword.</h2>
+        </div>
+        `
+  }
 }
 
 function handleReset() {
